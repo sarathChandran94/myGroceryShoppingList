@@ -1,0 +1,91 @@
+[
+    {
+        "SNo" : "1",
+        "Name" : "Milk",
+        "Quantity" : "1 Ltr",
+        "Unit" : "1",
+        "Department" : "Milk",
+        "Notes" : "Milma only no Amul"
+    },
+
+    {
+        "SNo" : "2",
+        "Name" : "Egg",
+        "Quantity" : "10",
+        "Unit" : "10",
+        "Department" : "Egg",
+        "Notes" : "Look for duck eggs if available"
+    },
+
+    {
+        "SNo" : "3",
+        "Name" : "Potato",
+        "Quantity" : "1 KG",
+        "Unit" : "1",
+        "Department" : "Vegetable",
+        "Notes" : "Look for big ones"
+    },
+
+    {
+        "SNo" : "4",
+        "Name" : "Onion",
+        "Quantity" : "500 g",
+        "Unit" : "1",
+        "Department" : "Vegetable",
+        "Notes" : "Small onions only"
+    },
+
+    {
+        "SNo" : "5",
+        "Name" : "Orange",
+        "Quantity" : "1 KG",
+        "Unit" : "1",
+        "Department" : "Fruit",
+        "Notes" : "Look for good ones"
+    },
+
+    {
+        "SNo" : "6",
+        "Name" : "Chilli Powder",
+        "Quantity" : "500 g",
+        "Unit" : "1",
+        "Department" : "Spices",
+        "Notes" : "Look for Eastern"
+    },
+
+    {
+        "SNo" : "7",
+        "Name" : "Mutton",
+        "Quantity" : "1 KG",
+        "Unit" : "1",
+        "Department" : "Meat",
+        "Notes" : "Ribs preferred"
+    },
+
+    {
+        "SNo" : "8",
+        "Name" : "Soap",
+        "Quantity" : "1",
+        "Unit" : "1",
+        "Department" : "Soaps",
+        "Notes" : "Look for Dettol"
+    },
+
+    {
+        "SNo" : "9",
+        "Name" : "Sanitizer",
+        "Quantity" : "250 ml",
+        "Unit" : "1",
+        "Department" : "Health",
+        "Notes" : "Look for products with minimum 60% alcohol"
+    },
+
+    {
+        "SNo" : "10",
+        "Name" : "Face Masks",
+        "Quantity" : "4",
+        "Unit" : "4",
+        "Department" : "Health",
+        "Notes" : "Look for reusable ones"
+    }
+]

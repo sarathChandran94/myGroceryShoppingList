@@ -1,0 +1,55 @@
+body{
+    background-color: grey;
+}
+
+.header {
+    border: ridge red;
+    text-align: center;
+    color: white;
+    background-color: darkslategray;
+    margin-bottom: 5px;
+}
+.header h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-body {
+    border: blue dotted 1px;
+    text-align: center;
+    padding: 5px;
+}
+
+#mybtn {
+    background-color: rgb(76, 0, 255);
+    color: burlywood;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#myList {
+    text-align: left;
+    color: cornsilk;
+}
+
+.colm {
+    border: black solid 1px;
+    text-align: left;
+    text-decoration: none;
+}
+#mySerial {
+    text-align: center;
+}
+#myName {
+
+}
+#myQuant {
+    text-align: center;
+}
+#myUnit {
+    text-align: center;
+}
+#myDept {
+    text-align: center;
+}
+#myNotes {
+    border: black solid 1px;
+}
