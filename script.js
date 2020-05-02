@@ -1,52 +1,32 @@
 function myFunction() {
+    document.getElementById("dot-animation").style.display = "none";
 
-// XMR Object
-var xhttp = new XMLHttpRequest();
+    // XMR Object
+    var xhttp = new XMLHttpRequest();
 
-// Event listener
-xhttp.onreadystatechange = function() {
+    // Event listener
+    xhttp.onreadystatechange = function() {
 
-    if(this.readyState == 4 && this.status == 200) {
-        var response = JSON.parse(this.responseText);
-        var mySno = "";
-        var myName = "";
-        var myQuant = "";
-        var myUnit = "";
-        var myDept = "";
-        var myNotes = "";
-        for(var i = 0;i<response.length;i++) {
-            mySno += "<p>" + response[i].SNo + "</p>";
+        if(this.readyState == 4 && this.status == 200) {
+            var response = JSON.parse(this.responseText);
+            var tableContents = "";
+
+            for (var x in response) {
+                tableContents += `<tr class='tableRow'>
+                                <td class='colm'> ${response[x].SNo} </td>
+                                <td class='colm'> ${response[x].Name} </td>
+                                <td class='colm'> ${response[x].Quantity} </td>
+                                <td class='colm'> ${response[x].Unit} </td>
+                                <td class='colm'> ${response[x].Department} </td>
+                                <td class='colm'> ${response[x].Notes} </td>
+                                </tr>`;
+            }
+        document.getElementById("tableBody").innerHTML = tableContents;
+        console.log(response);
         }
-        document.getElementById("mySerial").innerHTML = mySno;
 
-        for(var j = 0;j<response.length;j++) {
-            myName += "<p>" + response[j].Name + "</p>";
-        }
-        document.getElementById("myName").innerHTML = myName;
-
-        for(var j = 0;j<response.length;j++) {
-            myQuant += "<p>" + response[j].Quantity + "</p>";
-        }
-        document.getElementById("myQuant").innerHTML = myQuant;
-
-        for(var j = 0;j<response.length;j++) {
-            myUnit += "<p>" + response[j].Unit + "</p>";
-        }
-        document.getElementById("myUnit").innerHTML = myUnit;
-
-        for(var j = 0;j<response.length;j++) {
-            myDept += "<p>" + response[j].Department + "</p>";
-        }
-        document.getElementById("myDept").innerHTML = myDept;
-
-        for(var j = 0;j<response.length;j++) {
-            myNotes += "<p>" + response[j].Notes + "</p>";
-        }
-        document.getElementById("myNotes").innerHTML = myNotes;
     }
-
-}
-xhttp.open("GET" , "list.json" , true);
-xhttp.send();
+    xhttp.open("GET" , "list.json" , true);
+    xhttp.send();
 
 }
