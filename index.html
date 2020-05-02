@@ -5,279 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Shopping List</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
+<div id="body">
 
                     <!-- Header -->
-    <div class="header">
-        <header>
-            <h2>GROCERY SHOPPING LIST</h2>
-        </header>
+    <div class="jumbotron jumbotron-fluid shadow" id="jumbo">
+        <div class="container" id="header">
+            <img src="img/empty-cart-roll-animation.gif" width="120px" alt="cart">
+            <h1 class="display-4 animated infinite rubberBand" style="display: inline-block;">GROCERY</h1><h1 class="display-4" style="display: inline;"> SHOPPING LIST</h1>
+        </div>
     </div>
 
                     <!-- Main Body -->
-    <div class="main-body">
 
-        <button id="mybtn" onclick="myFunction()">Get My Shopping List</button>
+    <div class="container main-body">
+        <div class="">
+            <button class="btn-lg shadow" id="mybtn" type="button" data-toggle="collapse" data-target="#tableDiv" aria-expanded="false" aria-controls="collapseExample" onclick="myFunction()">Get My Shopping List</button>
+        </div>
+        <div class="text-center" id="dot-animation" style="display: block;">
+            <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
 
-    </div>
 
-                    <!-- table -->
-    <div class="myTable">
-        <table class="GrocList">
-            <thead class="tableHead">
-                <tr>
-                    <th class="serial">
-                        SNo
-                    </th>
-                    <th class="name">
-                        Name
-                    </th>
-                    <th class="qty">
-                        Quantity
-                    </th>
-                    <th class="unit">
-                        Unit
-                    </th>
-                    <th class="dept">
-                        Department
-                    </th>
-                    <th class="note">
-                        Notes
-                    </th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="colm" id="mySerial">
+                        <!-- table -->
+        <div id="tableDiv" class="collapse container rounded-lg shadow">
+            <div class="container mx-auto p-1 table-responsive-md" id="tableCard">
+                <table id="myTable" class="table table-hover table-dark table-striped shadow ">
+                    <!-- <caption class="text-center">Grocery Shopping List</caption> -->
+                    <thead id="tableHead" class="thead-dark">
+                        <tr class="tableRow">
+                            <th class="colm" id="">
+                                Sno
+                            </th>
+                            <th class="colm" id="">
+                                Name
+                            </th>
+                            <th class="colm" id="">
+                                Quantity
+                            </th>
+                            <th class="colm" id="">
+                                Unit
+                            </th>
+                            <th class="colm" id="">
+                                Department
+                            </th>
+                            <th class="colm" id="">
+                                Notes
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+                        <!-- table contents -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-                    </td>
-                    <td class="colm" id="myName">
-
-                    </td>
-                    <td class="colm" id="myQuant">
-
-                    </td>
-                    <td class="colm" id="myUnit">
-
-                    </td>
-                    <td class="colm" id="myDept">
-
-                    </td>
-                    <td class="colm" id="myNotes">
-
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td class="serial">
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td class="serial">
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td class="serial">
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td class="serial">
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td class="serial">
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td class="serial">
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td class="serial">
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td class="serial">
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-            </tbody>
-            <tbody>
-                <tr>
-                    <td class="serial">
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                    <td>
-
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 
                     <!-- Footer -->
-    <div class="footer">
-        <footer>
-            <h5>&copy;Sarath C FSD-2020 Koratty Batch</h5>
-        </footer>
+    <div class="container-fluid text-center fixed-bottom" id="foot">
+        <div class="card card-footer">
+            <h6>&copy; Sarath C - FSD-2020 Koratty Batch</h6>
+        </div>
     </div>
-
+</div>
                     <!-- javascript -->
 <script src="script.js"></script>
+                    <!-- bootstrap plugins -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
 </body>
 </html>
