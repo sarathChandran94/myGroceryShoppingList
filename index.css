@@ -1,55 +1,81 @@
-body{
-    background-color: grey;
+#body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #efecef;
+    margin-bottom: 10px;
 }
 
-.header {
-    border: ridge red;
-    text-align: center;
-    color: white;
-    background-color: darkslategray;
-    margin-bottom: 5px;
+#jumbo {
+    background: #60a7a8;
 }
-.header h2 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+#jumbo h1 {
+    /* border: black solid 1px; */
+    text-align: center;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+
+}
+#jumbo img {
+    /* border: black solid 1px; */
+    float: left;
+    margin-left: 100px;
+    margin-top: -40px;
+    position: relative;
+    animation-name: cartMove;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes cartMove {
+    from {left: -350px;}
+    to {left: 30px;}
 }
 
 .main-body {
-    border: blue dotted 1px;
     text-align: center;
-    padding: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
 #mybtn {
-    background-color: rgb(76, 0, 255);
-    color: burlywood;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #af4358;
+    margin: 10px;
 }
 
-#myList {
-    text-align: left;
-    color: cornsilk;
+/* Table Design */
+#tableDiv {
+
+    background-color: #66674e;
+    padding: 10px;
+    margin-bottom: 20px;
+
+}
+
+#tableCard {
+    background-color: #66674e;
+}
+
+#myTable {
+    background-color: green;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: black solid 1px;
 }
 
 .colm {
-    border: black solid 1px;
-    text-align: left;
-    text-decoration: none;
-}
-#mySerial {
     text-align: center;
 }
-#myName {
 
-}
-#myQuant {
-    text-align: center;
-}
-#myUnit {
-    text-align: center;
-}
-#myDept {
-    text-align: center;
-}
-#myNotes {
-    border: black solid 1px;
+/* footer */
+
+#foot {
+    background: #60a7a8;
 }
