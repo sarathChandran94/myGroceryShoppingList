@@ -1,15 +1,19 @@
 #body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #efecef;
+    background: #cbb085;
     margin-bottom: 10px;
 }
 
 #jumbo {
-    background: #60a7a8;
+    background: radial-gradient(circle, rgba(216,153,161,1) 0%, rgba(231,107,123,1) 50%, rgba(233,99,116,1) 100%);
 }
 
 #jumbo h1 {
     /* border: black solid 1px; */
+    font-family: 'Oxygen', sans-serif;
+    color: #ffb211;
+    font-size: 5vw;
+    font-weight: 700;
+    text-shadow: black 5px 5px 5px;
     text-align: center;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -25,7 +29,7 @@
     animation-name: cartMove;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in;
     animation-direction: alternate;
 }
 
@@ -39,27 +43,33 @@
     padding: 20px;
     margin-bottom: 20px;
 }
+#button {
+    margin-bottom: 0px;
+
+}
 
 #mybtn {
-    background-color: #af4358;
-    margin: 10px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    background: radial-gradient(circle, rgba(0,255,245,1) 0%, rgba(55,153,149,1) 100%);
+    margin-bottom: 20px;
+
 }
 
 /* Table Design */
 #tableDiv {
 
-    background-color: #66674e;
+    background: radial-gradient(circle, rgba(0,255,245,1) 0%, rgba(55,153,149,1) 100%);
     padding: 10px;
     margin-bottom: 20px;
 
 }
 
-#tableCard {
-    background-color: #66674e;
-}
-
 #myTable {
-    background-color: green;
+    font-family: 'Oxygen', sans-serif;
+    background-color: #ffc13b;
+    color: black;
+    font-weight: 700;
 }
 
 table {
@@ -77,5 +87,5 @@ td, th {
 /* footer */
 
 #foot {
-    background: #60a7a8;
+    background:gray;
 }

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grocery Shopping List</title>
+    <link rel="icon" href="img/favicon2.jpg" type="image/png">
     <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
@@ -13,17 +15,17 @@
 
                     <!-- Header -->
     <div class="jumbotron jumbotron-fluid shadow" id="jumbo">
-        <div class="container" id="header">
+        <div class="container-sm" id="header">
             <img src="img/empty-cart-roll-animation.gif" width="120px" alt="cart">
-            <h1 class="display-4 animated infinite rubberBand" style="display: inline-block;">GROCERY</h1><h1 class="display-4" style="display: inline;"> SHOPPING LIST</h1>
+            <h1 class="display-4 animated infinite rubberBand" style="display: inline-block;">GROCERY  </h1><h1 class="display-4" style="display: inline;">  SHOPPING LIST</h1>
         </div>
     </div>
 
                     <!-- Main Body -->
 
-    <div class="container main-body">
-        <div class="">
-            <button class="btn-lg shadow" id="mybtn" type="button" data-toggle="collapse" data-target="#tableDiv" aria-expanded="false" aria-controls="collapseExample" onclick="myFunction()">Get My Shopping List</button>
+    <div class="container-md main-body">
+        <div id="button">
+            <button class="btn-lg shadow" id="mybtn" type="button" data-toggle="collapse" data-target="#tableDiv" aria-expanded="false" aria-controls="collapseExample" onclick="myFunction()">Get the Shopping List</button>
         </div>
         <div class="text-center" id="dot-animation" style="display: block;">
             <div class="spinner-grow" role="status">
@@ -36,31 +38,44 @@
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
+        
+        <div id="space" style="display: block;">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
 
 
                         <!-- table -->
-        <div id="tableDiv" class="collapse container rounded-lg shadow">
-            <div class="container mx-auto p-1 table-responsive-md" id="tableCard">
-                <table id="myTable" class="table table-hover table-dark table-striped shadow ">
+        <div class="collapse container-sm rounded-lg shadow" id="tableDiv" >
+            <div class="container-sm p-0 table-responsive-sm" id="tableCard">
+                <table class="table table-hover table-dark table-striped rounded shadow " id="myTable" >
                     <!-- <caption class="text-center">Grocery Shopping List</caption> -->
-                    <thead id="tableHead" class="thead-dark">
+                    <thead class="thead-dark" id="tableHead" >
                         <tr class="tableRow">
-                            <th class="colm" id="">
+                            <th class="colm">
                                 Sno
                             </th>
-                            <th class="colm" id="">
+                            <th class="colm">
                                 Name
                             </th>
-                            <th class="colm" id="">
+                            <th class="colm">
                                 Quantity
                             </th>
-                            <th class="colm" id="">
+                            <th class="colm">
                                 Unit
                             </th>
-                            <th class="colm" id="">
+                            <th class="colm">
                                 Department
                             </th>
-                            <th class="colm" id="">
+                            <th class="colm">
                                 Notes
                             </th>
                         </tr>

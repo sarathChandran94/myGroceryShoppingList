@@ -1,5 +1,6 @@
 function myFunction() {
     document.getElementById("dot-animation").style.display = "none";
+    document.getElementById("space").style.display = "none";
 
     // XMR Object
     var xhttp = new XMLHttpRequest();
